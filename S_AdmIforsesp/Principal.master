@@ -1,0 +1,163 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Principal.master.cs" Inherits="Principal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>IFORSESP
+    </title>
+    <meta name="description" content="Login" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui" />
+
+    <!-- Call App Mode on ios devices -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Remove Tap Highlight on Windows Phone IE -->
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- base css -->
+    <link rel="stylesheet" media="screen, print" href="<%:ResolveUrl("App_Themes/css/vendors.bundle.css") %>" />
+    <link rel="stylesheet" media="screen, print" href="<%:ResolveUrl("App_Themes/css/app.bundle.css") %>" />
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" sizes="180x180" href="<%:ResolveUrl("images/favicon/apple-touch-icon.png") %>" />
+    <link rel="icon" type="image/png" sizes="32x32" href="<%:ResolveUrl("images/favicon/favicon-32x32.png") %>" />
+    <link rel="mask-icon" href="<%:ResolveUrl("images/favicon/safari-pinned-tab.svg") %>" color="#5bbad5" />
+
+    <!-- Optional: page related CSS-->
+    <link rel="stylesheet" media="screen, print" href="<%:ResolveUrl("App_Themes/css/page-login.css") %>" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+         <!-- Modal -->
+        <asp:Panel ID="Panel2" runat="server">
+            <div class="modal-cookies" id="Modal" aria-hidden="true">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Nós usamos cookies</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-lg-9">
+                            <p>
+                                Eles são usados para aprimorar a sua experiência. Ao fechar este banner ou continuar na página, você concorda com o uso de cookies.
+                            </p>
+                        </div>
+                        <div class="col-lg-3">
+
+                            <%--<asp:Button ID="btnAceitar" runat="server" Text="Permitir todos os cookies" OnClick="btnAceitar_Click" class="btn btn-success right"/>--%>
+                            <asp:LinkButton ID="btnAceitar" runat="server" OnClick="btnAceitar_Click" CssClass="btn-primary" Style="padding: 7px;">Aceitar</asp:LinkButton>
+
+                            <%--<a href="Cookies.aspx" class="btn btn-danger left" runat="server">Saiba Mais</a>--%>
+                            <asp:LinkButton ID="lkbCookies" runat="server" OnClick="lkbCookies_Click" CssClass="btn-danger" Style="padding: 7px;">Saiba Mais</asp:LinkButton>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </asp:Panel>
+
+        <!-- Cookies -->
+        <asp:Panel ID="Panel1" runat="server" Visible="false">
+            <div class="modal-cookies" id="Modal1" aria-hidden="true">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="modal-title">Política de Cookies</h2>
+                        <p>
+                            Os cookies usados no site são categorizados e você pode ler sobre cada categoria e permitir ou negar parte ou a totalidade.
+                            Quando as categorias permitidas anteriormente são desativadas, todos os cookies atribuídos a essa categoria serão excluídos do seu navegador. 
+                            Além disso, você pode ver os cookies atribuídos a cada categoria e informações detalhadas na declaração de cookies.
+                        </p>
+                        <h3 class=""><strong>LGPD NA PRÁTICA</strong></h3>
+                        <p>
+                            Como plataforma que pretende auxiliar na compreensão da Lei Geral de Proteção de Dados, não poderíamos negligenciar sua privacidade. 
+                       Empregamos cookies na operação do portal e queremos deixar claro para você como, quando e para que, bem como te explicar como se opor.
+                        </p>
+                        <h3 class=""><strong>O que são** cookies?</strong></h3>
+                        <p>
+                            Um cookie é um pequeno arquivo que será instalado em seu computador através de seu navegador quando nosso portal é acessado. 
+                        Esse arquivo ficará acessível a nossos servidores para coleta de informações que nos permitirão aprimorar a usabilidade e a experiência de navegação
+                        em nossos portais. Estes cookies não coletam outras dados pessoais ou informação de qualquer natureza armazenadas em seu computador.
+                        </p>
+                        <h3 class=""><strong>Como e por que usamos Cookies?</strong></h3>
+                        <p>
+                            Empregamos cookies para que, quando você visita site ADM, possamos coletar automaticamente os seguintes dados de acesso para controle do seu website.<br />
+                            <br />
+                        </p>
+
+                        <table class="table table-bordered">
+                            <tr>
+                                <td>Nome</td>
+                                <td>Nome de anfitrião</td>
+                                <td>Caminho</td>
+                                <td>Termo</td>
+                                <td>Sobre</td>
+                            </tr>
+                            <tr>
+                                <td>Inicio</td>
+                                <td>.adm.IFORSESP.com.br</td>
+                                <td>/ </td>
+                                <td>1 dia</td>
+                                <td>Registra um ID exclusivo para um usuario do site. Os dados são usados para acesso as configurações do site Adm.</td>
+                            </tr>
+                            <tr>
+                                <td>ADM</td>
+                                <td>.adm.IFORSESP.com.br</td>
+                                <td>/ </td>
+                                <td>1 dia</td>
+                                <td>Cookie criado pra saber se o ADM esta sendo acessado</td>
+                            </tr>
+                            <tr>
+                                <td>ASP.NET_SessionId</td>
+                                <td>.adm.IFORSESP.com.br</td>
+                                <td>/ </td>
+                                <td>1 hora</td>
+                                <td>Sessão do usuário administrativo logado na área administrativa do site para fazer as alterações.</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <asp:LinkButton ID="Fechar" runat="server" OnClick="Fechar_Click" CssClass="btn-danger" Style="padding: 7px;">Fechar</asp:LinkButton>
+                    </div>
+                </div>
+            </div>
+        </asp:Panel>
+
+
+
+
+        <div class="blankpage-form-field">
+            <div class="page-logo m-0 w-100 align-items-center justify-content-center rounded border-bottom-left-radius-0 border-bottom-right-radius-0 px-4">
+                <a href="javascript:void(0)" class="page-logo-link press-scale-down d-flex align-items-center">
+                    <img src="<%:ResolveUrl("images/Site/logo.png") %>" alt="SmartAdmin WebApp" aria-roledescription="logo" />
+                    <%--<span class="page-logo-text mr-1">SISPESP</span>--%>
+                    <%--<i class="fal fa-angle-down d-inline-block ml-1 fs-lg color-primary-300"></i>--%>
+                </a>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <%--<div class="login-footer p-2">
+            <div class="row">
+                <div class="col col-sm-12 text-center">
+                    <i><strong>Mensagem do sistema:</strong>  Você foi desconectado de 198.164.246.1 no sábado, março de 2017 às 10h56</i>
+                </div>
+            </div>
+        </div>--%>
+        <video poster="images/backgrounds/clouds.png" id="bgvid" playsinline autoplay muted loop>
+            <source src="media/video/cc.webm" type="video/webm" />
+            <source src="media/video/cc.mp4" type="video/mp4" />
+        </video>
+
+        <script src="<%:ResolveUrl("js/Site/vendors.bundle.js") %>"></script>
+        <script src="<%:ResolveUrl("js/Site/app.bundle.js") %>"></script>
+
+    </form>
+</body>
+</html>
