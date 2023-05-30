@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{827921B0-FBE0-4827-9BE2-61EFDF94F0C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Autenticacao\AutenticacaoBLL.cs" />
+    <Compile Include="Autenticacao\DadosAcessoBLL.cs" />
+    <Compile Include="FuncoesBLL.cs" />
+    <Compile Include="GaleriaImgBLL.cs" />
+    <Compile Include="ModuloBannerBLL.cs" />
+    <Compile Include="ModuloBannerItemBLL.cs" />
+    <Compile Include="ModuloConvenioBLL.cs" />
+    <Compile Include="ModuloDuvidaBLL.cs" />
+    <Compile Include="ModuloLegislacaoBLL.cs" />
+    <Compile Include="ModuloLegislacaoItemBLL.cs" />
+    <Compile Include="ModuloPublicacaoBLL.cs" />
+    <Compile Include="ModuloPublicacaoItemBLL.cs" />
+    <Compile Include="ModuloSorteioBLL.cs" />
+    <Compile Include="ModuloSorteioParticipantesBLL.cs" />
+    <Compile Include="ModuloSorteioPremioBLL.cs" />
+    <Compile Include="ModuloSorteioResultadoBLL.cs" />
+    <Compile Include="ModuloUtilidadesBLL.cs" />
+    <Compile Include="NoticiaBLL.cs" />
+    <Compile Include="NoticiaCategoriaBLL.cs" />
+    <Compile Include="NoticiaDepartamentoBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsuarioWebBLL.cs" />
+    <Compile Include="WebAdvogadosBLL.cs" />
+    <Compile Include="WebAtividadeBLL.cs" />
+    <Compile Include="WebAvaliacaoBLL.cs" />
+    <Compile Include="WebCadastrosBLL.cs" />
+    <Compile Include="WebCargoBLL.cs" />
+    <Compile Include="WebConfigBLL.cs" />
+    <Compile Include="WebDownloadEmailBLL.cs" />
+    <Compile Include="WebEmailBLL.cs" />
+    <Compile Include="WebEmailRespostaBLL.cs" />
+    <Compile Include="WebEquipeBLL.cs" />
+    <Compile Include="WebEstatutoBLL.cs" />
+    <Compile Include="WebFeriadoBLL.cs" />
+    <Compile Include="WebGrupoBLL.cs" />
+    <Compile Include="WebInformativoBLL.cs" />
+    <Compile Include="WebMensagemBLL.cs" />
+    <Compile Include="WebMenuBLL.cs" />
+    <Compile Include="WebParceiroBLL.cs" />
+    <Compile Include="WebQuemSomosBLL.cs" />
+    <Compile Include="WebSEOBLL.cs" />
+    <Compile Include="WebSituacaoContatoBLL.cs" />
+    <Compile Include="WebServicosBLL.cs" />
+    <Compile Include="WebTarefasBLL.cs" />
+    <Compile Include="WebTipoCadastrosBLL.cs" />
+    <Compile Include="WebTipoServidorBLL.cs" />
+    <Compile Include="WebTipoStatusBLL.cs" />
+    <Compile Include="WebYoutubeBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{8a6e8ac2-2f72-417d-bf30-59b964d1957a}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MODEL\MODEL.csproj">
+      <Project>{83d37b8a-fd90-4db6-b089-d1cdc1ef0b08}</Project>
+      <Name>MODEL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
