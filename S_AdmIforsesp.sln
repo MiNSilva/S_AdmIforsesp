@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "S_AdmIforsesp(1)", "S_AdmIforsesp\", "{39086F0F-3D94-4A8C-BA67-CE2F70E67660}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "S_AdmIforsesp", "S_AdmIforsesp\", "{39086F0F-3D94-4A8C-BA67-CE2F70E67660}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8.1"
 		ProjectReferences = "{827921b0-fbe0-4827-9be2-61efdf94f0c2}|BLL.dll;{8A6E8AC2-2F72-417D-BF30-59B964D1957A}|DAL.dll;{83D37B8A-FD90-4DB6-B089-D1CDC1EF0B08}|MODEL.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_49870"
 		Debug.AspNetCompiler.PhysicalPath = "S_AdmIforsesp\"

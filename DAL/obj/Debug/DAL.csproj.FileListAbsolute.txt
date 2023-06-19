@@ -60,3 +60,12 @@ D:\REPOSITORIO\S_AdmIforsesp\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\REPOSITORIO\S_AdmIforsesp\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\REPOSITORIO\S_AdmIforsesp\DAL\obj\Debug\DAL.dll
 D:\REPOSITORIO\S_AdmIforsesp\DAL\obj\Debug\DAL.pdb
+D:\GIT\S_AdmIforsesp\DAL\bin\Debug\DAL.dll
+D:\GIT\S_AdmIforsesp\DAL\bin\Debug\DAL.pdb
+D:\GIT\S_AdmIforsesp\DAL\bin\Debug\MODEL.dll
+D:\GIT\S_AdmIforsesp\DAL\bin\Debug\MODEL.pdb
+D:\GIT\S_AdmIforsesp\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\GIT\S_AdmIforsesp\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\GIT\S_AdmIforsesp\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\GIT\S_AdmIforsesp\DAL\obj\Debug\DAL.dll
+D:\GIT\S_AdmIforsesp\DAL\obj\Debug\DAL.pdb

@@ -41,3 +41,9 @@ D:\REPOSITORIO\S_AdmIforsesp\MODEL\obj\Debug\MODEL.csproj.AssemblyReference.cach
 D:\REPOSITORIO\S_AdmIforsesp\MODEL\obj\Debug\MODEL.csproj.CoreCompileInputs.cache
 D:\REPOSITORIO\S_AdmIforsesp\MODEL\obj\Debug\MODEL.dll
 D:\REPOSITORIO\S_AdmIforsesp\MODEL\obj\Debug\MODEL.pdb
+D:\GIT\S_AdmIforsesp\MODEL\bin\Debug\MODEL.dll
+D:\GIT\S_AdmIforsesp\MODEL\bin\Debug\MODEL.pdb
+D:\GIT\S_AdmIforsesp\MODEL\obj\Debug\MODEL.csproj.AssemblyReference.cache
+D:\GIT\S_AdmIforsesp\MODEL\obj\Debug\MODEL.csproj.CoreCompileInputs.cache
+D:\GIT\S_AdmIforsesp\MODEL\obj\Debug\MODEL.dll
+D:\GIT\S_AdmIforsesp\MODEL\obj\Debug\MODEL.pdb

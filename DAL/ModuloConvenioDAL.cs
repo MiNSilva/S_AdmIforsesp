@@ -25,6 +25,8 @@ namespace DIAPOIO.DAL
                 cmd.Parameters.AddWithValue("@Externo", util.Externo);
                 cmd.Parameters.AddWithValue("@Ordem", util.Ordem);
                 cmd.Parameters.AddWithValue("@Descricao", util.Descricao);
+                cmd.Parameters.AddWithValue("@Descritivo", string.Empty);
+                cmd.Parameters.AddWithValue("@TipoConvenios", 0);
                 cmd.ExecuteNonQuery();
             }
         }

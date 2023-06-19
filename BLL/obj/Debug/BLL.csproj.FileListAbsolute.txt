@@ -76,3 +76,14 @@ D:\REPOSITORIO\S_AdmIforsesp\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 D:\REPOSITORIO\S_AdmIforsesp\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\REPOSITORIO\S_AdmIforsesp\BLL\obj\Debug\BLL.dll
 D:\REPOSITORIO\S_AdmIforsesp\BLL\obj\Debug\BLL.pdb
+D:\GIT\S_AdmIforsesp\BLL\bin\Debug\BLL.dll
+D:\GIT\S_AdmIforsesp\BLL\bin\Debug\BLL.pdb
+D:\GIT\S_AdmIforsesp\BLL\bin\Debug\DAL.dll
+D:\GIT\S_AdmIforsesp\BLL\bin\Debug\MODEL.dll
+D:\GIT\S_AdmIforsesp\BLL\bin\Debug\DAL.pdb
+D:\GIT\S_AdmIforsesp\BLL\bin\Debug\MODEL.pdb
+D:\GIT\S_AdmIforsesp\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\GIT\S_AdmIforsesp\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\GIT\S_AdmIforsesp\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\GIT\S_AdmIforsesp\BLL\obj\Debug\BLL.dll
+D:\GIT\S_AdmIforsesp\BLL\obj\Debug\BLL.pdb
